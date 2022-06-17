@@ -45,11 +45,17 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="24" height="14"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray"/>
+                                                    <connections>
+                                                        <action selector="completeButtonTapped:" destination="kMr-Ka-2zS" eventType="touchUpInside" id="8ez-0Z-gug"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH0-fA-6K4">
                                                     <rect key="frame" x="38" y="0.0" width="24" height="14"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="gray"/>
+                                                    <connections>
+                                                        <action selector="completeButtonTapped2:" destination="kMr-Ka-2zS" eventType="touchUpInside" id="ZxL-m9-nLw"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -60,6 +66,9 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="completeButton" destination="7ci-hM-Hx6" id="6NZ-1G-sx0"/>
+                                    <outlet property="completeButton2" destination="xH0-fA-6K4" id="fXt-jK-R2V"/>
+                                    <outlet property="goalInfoLabel" destination="0Ji-NJ-MJc" id="fWr-sd-0dP"/>
+                                    <outlet property="goalTitleLabel" destination="zVO-uH-LUv" id="2Yn-q0-HRu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -69,7 +78,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Goals Tracker" id="co7-rU-aNa">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="cTD-ib-hZC"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="cTD-ib-hZC">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="ein-be-4Fr" id="zcQ-T1-r6s"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtb-C0-HUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

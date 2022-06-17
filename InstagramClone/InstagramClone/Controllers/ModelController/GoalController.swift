@@ -28,7 +28,7 @@ class GoalController {
             - append
      */
     func createGoal( title: String, notes: String? ){
-        let newGoal = Goal( title:title, notes: notes )
+        let newGoal = Goal( title:title, notes: notes)
         goals.append(newGoal)
         saveToPersistenceStore()
     }
